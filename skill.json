@@ -1,0 +1,38 @@
+{
+  "name": "genpark-universal-replacement-part-fitment-graph-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Universal auto replacement parts catalog and vehicle fitment compatibility graph resolver eliminating incorrect parts returns.",
+  "author": "genpark",
+  "category": "automotive",
+  "tags": [
+    "auto-parts",
+    "fitment-graph",
+    "oem-interchange",
+    "replacement-parts",
+    "partly"
+  ],
+  "inputs": {
+    "part_oem_number": {
+      "type": "string"
+    },
+    "target_vehicle_ktype": {
+      "type": "string"
+    },
+    "vin": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "fitment_guarantee": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "interchangeable_aftermarket_skus": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
